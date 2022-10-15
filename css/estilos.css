@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:ital,wght@1,300&display=swap');
+:root {
+  --header-height: 1rem;
+  --first-color: #0071e3;
+  --title-color: #044186;
+  --text_color: #043f7b;
+  --text-color-light: #a6a6a6;
+  --body-color: #fbfefd;
+  --font-family: 'Erica One', cursive;
+  --font-family2: 'Secular One', sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.txt_font1 {
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+.txt_font_menuDespleagable {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+.txt_font_dropDown {
+  text-decoration: none;
+  font-family: var(--font-family2);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.navbar-brand {
+  color: var(--first-color);
+}
+body {
+  padding-top: var(--header-height);
+}
+.container-fluid {
+}
+.logo-hamburger {
+  margin: 0 0.2em;
+}
+.logo-tittle {
+  font-family: 'Erica One', cursive;
+  /* margin: 0; */
+  color: var(--first-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 10px;
+}
+.container-location_lima {
+  color: var(--first-color);
+}
+.logo-img {
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
+.search-bar {
+  padding: 0 0.3em;
+  background: #e1e1e1c8;
+  border-radius: 0.2em;
+  width: 95%;
+  min-width: 13em;
+  gap: 0.3em;
+}
+.search {
+  font-size: 0.8rem;
+  border: 0;
+  width: 92%;
+  padding: 0.9em 0;
+  background: transparent;
+  outline: none;
+}
+::placeholder {
+  color: #000;
+}
+.style-container-location {
+  border-left: 0.1em solid #a6a6a6;
+  border-right: 0.1em solid #a6a6a6;
+}
+.container-user-carrito {
+  margin-right: 1em;
+  gap: 0.8em;
+}
+.container-user-carrito_txt_usuario {
+  color: var(--first-color);
+}
+.disactive {
+  display: none !important;
+}
+.active {
+  display: block;
+}
+.bg-gray {
+  background: rgba(12, 12, 12, 0.85);
+}
+@media screen and (min-width: 1200px) {
+  .search-bar {
+    margin: 0 0.7em 0 2em;
+  }
+}
