@@ -1,69 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 :root {
   --header-height: 1rem;
+  --p-: 0.7em;
   --first-color: #0071e3;
   --title-color: #044186;
   --text_color: #043f7b;
-  --text-color-light: #a6a6a6;
+  --text-color-light: #b3b3b3;
   --body-color: #fbfefd;
+  --lines-color: rgba(225, 225, 225, 0.5);
   --font-family: 'Erica One', cursive;
-  --font-family2: 'Secular One', sans-serif;
+  --font-family2: 'Nunito Sans', sans-serif;
+  --text-size: 0.8rem;
 }
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  color: #000;
+  font-family: var(--font-family2);
 }
 a {
   text-decoration: none;
 }
-.txt_font1 {
-  text-decoration: none;
-  font-family: var(--font-family);
+header {
+  margin-top: 0.3em;
+  position: relative;
+  z-index: 1;
+}
+body {
+  overflow-y: scroll;
+}
+#icon-list {
+  margin: 0;
 }
 .txt_font_menuDespleagable {
   text-decoration: none;
   font-family: var(--font-family);
   font-weight: 300;
 }
-.txt_font_dropDown {
-  text-decoration: none;
-  font-family: var(--font-family2);
-  font-weight: 200;
-  font-size: 0.8rem;
+#icon-list {
+  display: inline-block;
+  color: rgba(225, 225, 225, 0);
 }
-.navbar-brand {
-  color: var(--first-color);
-}
-body {
-  padding-top: var(--header-height);
-}
-.container-fluid {
-}
-.logo-hamburger {
-  margin: 0 0.2em;
-}
+
 .logo-tittle {
   font-family: 'Erica One', cursive;
-  /* margin: 0; */
   color: var(--first-color);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   padding: 10px;
 }
 .container-location_lima {
   color: var(--first-color);
+  font-family: var(--font-family2);
 }
 .logo-img {
   margin-left: 0.5em;
   margin-right: 0.2em;
 }
+.container-location_lima {
+  font-family: var(--font-family);
+  font-size: var(--text-size);
+}
 .search-bar {
+  margin-right: 0;
   padding: 0 0.3em;
   background: #e1e1e1c8;
   border-radius: 0.2em;
-  width: 95%;
+
+  padding-right: 1em;
   min-width: 13em;
   gap: 0.3em;
 }
@@ -78,9 +85,12 @@ body {
 ::placeholder {
   color: #000;
 }
+
 .style-container-location {
   border-left: 0.1em solid #a6a6a6;
   border-right: 0.1em solid #a6a6a6;
+  height: fit-content;
+  margin-right: 1em;
 }
 .container-user-carrito {
   margin-right: 1em;
@@ -88,12 +98,22 @@ body {
 }
 .container-user-carrito_txt_usuario {
   color: var(--first-color);
+  font-family: var(--font-family);
+  font-size: var(--text-size);
 }
 .disactive {
   display: none !important;
 }
 .active {
-  display: block;
+  display: block !important;
+}
+.aparecer_nav-desplegable {
+  padding: 0 1em 0 0;
+  position: absolute;
+  top: -0.1px;
+  z-index: 999;
+  background-color: #ffffff;
+  overflow-y: scroll;
 }
 .bg-gray {
   background: rgba(12, 12, 12, 0.85);
@@ -101,5 +121,171 @@ body {
 @media screen and (min-width: 1200px) {
   .search-bar {
     margin: 0 0.7em 0 2em;
+  }
+}
+#icon-list {
+  padding: 0.5em 0.6em;
+}
+/* Nav desplegable */
+
+.nav-desplegable {
+  width: 0;
+  display: none;
+  padding: 0 1em 0 0;
+  position: absolute;
+  top: -0.1px;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+.nav-desplegable__icons {
+  padding: var(--p-);
+  border-bottom: 1px solid var(--lines-color);
+}
+.img-user-item {
+  width: 10em;
+}
+.img-fire img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 2em;
+}
+#nav-desplegable__button-close {
+  margin-right: 2em;
+}
+
+.buttons-registrar {
+  padding: var(--p-);
+  border-bottom: 1px solid var(--lines-color);
+}
+.btn-ingreso,
+.btn-tarjeta {
+  background: rgb(41, 216, 132);
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.3em 0.7em;
+  border-radius: 0.2em;
+  line-height: 30px;
+  transition: all 1s;
+}
+.btn-ingreso,
+.btn-tarjeta:hover {
+  background: rgb(53, 199, 128);
+}
+.container-secciones {
+  padding: var(--p-);
+  border-bottom: 1px solid var(--lines-color);
+}
+.list-text {
+  font-size: var(--text-size);
+  font-weight: 600;
+}
+.seccion-registro {
+  padding: var(--p-);
+  font-size: var(--text-size);
+  border-bottom: 1px solid var(--lines-color);
+}
+.nacionality {
+  padding: var(--p-);
+  font-weight: 600;
+  color: #000;
+  border-bottom: 1px solid var(--lines-color);
+}
+.nacionality__countries-icon .countries-icons {
+  margin-left: 1.7em;
+  width: 1em;
+}
+.txtContries {
+  margin: 0;
+}
+/* banner  */
+.banner {
+  background-color: rgba(67, 67, 67, 0.144);
+  border-radius: 0.4em;
+  height: 29em;
+  padding: 1em;
+}
+.aside-left {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+#banner__junkFood {
+  transition: all 2s ease-in-out;
+  width: 5em;
+}
+.banner__text {
+  width: 40%;
+}
+.banner__text h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.banner__btn-pedir-ahora {
+  display: block;
+  width: 70%;
+  margin-top: 2em;
+  background-color: #000;
+  color: white;
+  padding: 0.6em;
+  border-radius: 0.5em;
+  transform: all 2s;
+}
+.banner__btn-pedir-ahora:hover {
+  color: var(--body-color);
+  background: rgb(31, 31, 31);
+}
+@media screen and (max-width: 1000px) {
+  .banner {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+  }
+  .banner__text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner__text p {
+    position: absolute;
+    top: 20%;
+  }
+
+  .aside-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .aside-right {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -99;
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 640px) {
+  .banner__text h1 {
+    font-size: 2rem;
+  }
+  .banner__text p {
+    position: absolute;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .banner {
+    min-width: 250px;
   }
 }
