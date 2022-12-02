@@ -1,0 +1,158 @@
+body{margin: 0px;padding: 0px;}
+
+/*CONFIGURACION CABECERA*/
+.cabecera{
+    display:flex;
+    border-bottom: solid rgb(201, 201, 201) 1px;
+    padding-top: 8px; ;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0	;
+	z-index: 999;
+    background-color: white;
+}
+
+.regresar{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.regresar h4{
+    margin-top: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.regresar a{
+    color: black;
+    text-decoration: none;
+}
+
+.regresar img{width: 30px;}
+
+.logo{margin-left :37%;}
+
+.logo img{width: 80%;}
+
+/*CONFIGURACION DEL MAIN*/
+main{
+    display: flex;
+    padding-top: 45px;
+}
+
+aside img{width: 110%;}
+
+section{
+    padding-left:15% ;
+    text-align: center;
+}
+
+section h1{
+    font-size: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*CONFIGURACION BOTONES*/
+.botonfacebook{
+    margin: 0px 200px;
+    padding: 13px 10px;
+    background-color: #3b5998;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botonfacebook a{
+color: white;
+text-decoration: none;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+}
+
+.botongoogle{
+    margin: 0px 200px;
+    padding: 13px 10px;
+    background-color: #cc403e;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botongoogle a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.botonapple{
+    margin: 15px 200px;
+    padding: 13px 60px;
+    background-color: #2b2929;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botonapple a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+
+/*TABLA*/
+table{
+    padding: 40px 0px 40px 0px;
+}
+
+td{
+    padding-bottom: 20px;
+}
+
+select{
+    padding: 15px 100px 15px 60px;
+    background-color: whitesmoke;
+    border:solid whitesmoke 1px ;
+    border-radius: 5px;
+}
+
+.texto{
+    padding: 15px 150px 15px 10px;
+    background-color: whitesmoke;
+    border:solid whitesmoke 1px ;
+    border-radius: 5px;
+}
+
+.seleccion{
+    padding: 15px 14px 15px 10px;
+    background-color: whitesmoke;
+    border:solid whitesmoke 1px ;
+    border-radius: 5px;
+}
+
+.numero{
+    padding: 15px 77px 15px 10px;
+    background-color: whitesmoke;
+    border:solid whitesmoke 1px ;
+    border-radius: 5px;
+}
+
+::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+section p{
+    padding: 4px 10px;
+    margin: 4px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section p a{
+    color: rgb(223, 109, 33);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+

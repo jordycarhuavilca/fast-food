@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario-quejas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- link of bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/sistemaPagos.css" />
+    <!-- link for icons boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  </head>
+  <body class="off opacityPropina">
+    <!-- div Spinners -->
+    <div class="contaiSpinners inactivo">
+      <div class="spinnerCheck"></div>
+      <div class="spinners">
+        <div class="spinnersStyle spinner-grow" style="color: rgb(41, 216, 132)" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinnersStyle spinner-grow" style="color: rgb(41, 216, 132)" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinnersStyle spinner-grow" style="color: rgb(41, 216, 132)" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div
+          class="circleGrow spinnersStyle spinner-grow"
+          style="color: rgb(41, 216, 132)"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div
+          class="circleGrow spinnersStyle spinner-grow"
+          style="color: rgb(41, 216, 132)"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div class="spinnerTxt">
+        <div>
+          <span> Estamos procesando tu orden </span>
+        </div>
+      </div>
+    </div>
+    <header class="comeback">
+      <a href="../inicio.html">
+        <button>
+          <i class="bi bi-arrow-left-short"></i>
+          <span class="comeback__text">Volver</span>
+        </button>
+      </a>
+      <h1 class="h4">FastFood</h1>
+    </header>
+    <div class="contenedor">
+      <div class="contenedorSistemaPagos">
+        <div class="contenedorTiempoEntrega">
+          <div class="tiempoEntrega">
+            <div class="tiempoEntrega__text">
+              <a href="" class="btnClosePaymentSystem">
+                <i class="bi bi-check-circle-fill"></i>
+              </a>
+              <span>Tiempo de entrega</span>
+            </div>
+            <div class="tiempoEntrega__detalles">
+              <span>Entrega Estimada:</span>
+              <span class="tiempoEstimado">30 - 45 min</span>
+            </div>
+          </div>
+          <div class="metodoPago">
+            <div class="metodoPago__text">
+              <i class="bi bi-check-circle-fill"></i>
+              <span class="metodoPago__letter">Método de pago</span>
+            </div>
+            <div class="metodoPago__contenido">
+              <div class="paymentCards">
+                <div class="metodoPago__form-check">
+                  <div class="metoPago__conte">
+                    <img src="../img/cards/pagoefectivo-logo-b2b.png" alt="" />
+                    <span class="">Efectivo</span>
+                  </div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                </div>
+                <div class="metodoPago__form-check">
+                  <div class="metoPago__conte">
+                    <i class="bx bxs-credit-card-alt"></i>
+                    <span class="">Mastercard</span>
+                  </div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                </div>
+                <div class="metodoPago__form-check">
+                  <div class="metoPago__conte">
+                    <i class="bx bxl-visa"></i>
+                    <span class="">Visa</span>
+                  </div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                </div>
+                <div class="metodoPago__form-checkDife">
+                  <div class="metoPago__conte">
+                    <i class="bx bxs-credit-card"></i>
+                    <span>BBVA</span>
+                  </div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="addCard">
+              <div class="containAddCard">
+                <div class="addCard-text">
+                  <i class="bi bi-credit-card-2-back"></i>
+                  <span>Agregar tarjeta de crédito o débito</span>
+                </div>
+                <a href="" class="btnAddCard">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Elegir propina div -->
+          <div class="containerElegirPropina">
+            <div class="elegirPropina">
+              <div class="cardPropina">
+                <span>Añade una propina</span>
+                <i id="btnCloseCardPropina" class="bi bi-x-circle-fill text-black-50"></i>
+              </div>
+              <div class="elegirPropina__input">
+                <span>Ingresa el monto</span>
+                <input type="text" value="S/1.75" />
+              </div>
+              <div class="button">
+                <button name="guardar" class="Guardar">
+                  <span>Guardar</span>
+                </button>
+                <button name="sinPropina" class="sinPropina">
+                  <span class="">Sin propina</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detalles compra -->
+        <div class="contenedorDetalles-compra">
+          <div class="detalles-compra">
+            <div class="propina">
+              <h3>Reconoce el esfuerzo de tu FastFood</h3>
+              <span>100% de esta recompensa va para él</span>
+              <div class="cantidadPropina">
+                <div data-id="min">S/5.50</div>
+                <div data-id="average">S/8</div>
+                <div data-id="max">S/10</div>
+                <div id="otroPropina"><i class="bi bi-pencil"></i> <span>Otro</span></div>
+              </div>
+            </div>
+            <div class="precioPagar">
+              <span class="precioPagar__resumen">Resumen</span>
+              <div class="precio">
+                <span>Costo de Producto</span><span id="precioProducto">S/0.0</span>
+              </div>
+              <div class="precio">
+                <span>Costo de envió</span><span id="costoEnvio">S/10.0</span>
+              </div>
+              <div class="precio"><span>Propina</span> <span id="propinaTxt">S/0.0</span></div>
+              <div class="totalPrecio">
+                <span class="total">Total</span><span id="propina">S/0.0</span>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="totalPagar">
+              <span>Total a pagar</span>
+              <div class="precio">S/0.0</div>
+            </div>
+            <div class="btnHacerPedido">
+              <button>Hacer Pedido</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- complete card data -->
+    <div class="containerCompleteDataCard">
+      <div
+        class="opacityAlert-success alert alert-success alert-dismissible fade show"
+        role="alert"
+      >
+        <strong>Se ha Registrado tu tarjeta!</strong>
+        <button
+          type="button"
+          class="btn-close"
+          id="btnCloseAlertSuccess"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="tittle">
+        <h2>Agregar método de pago</h2>
+        <button class="btnClose">
+          <i class="bi bi-x-circle-fill text-black-50"></i>
+        </button>
+      </div>
+      <div class="imgCard">
+        <div class="simulacionCard">
+          <img class="chip" src="../img/paymentSystem/chip.png" alt="" />
+          <div class="identityCard">
+            <i class="bi bi-credit-card-2-back"></i>
+          </div>
+          <span class="dot">•••• •••• •••• ••••</span>
+          <div class="simulacionCard__nombres">
+            <span class="textName"></span>
+          </div>
+          <span class="fechaExpiracion"></span>
+        </div>
+      </div>
+      <div class="requisitosCard">
+        <div class="numberCard">
+          <span>Número de la tarjeta</span>
+          <input name="numbers" type="text" placeholder="Número de la tarjeta" />
+          <div class="advertencia disactive">Numero Invalido</div>
+        </div>
+        <div class="formularioCard">
+          <div class="datosComprador">
+            <div class="formularioCard__nombre">
+              <span>nombre</span>
+              <input name="name" type="text" placeholder="Nombre" />
+              <div class="advertencia disactive">valor requerido</div>
+            </div>
+            <div class="formularioCard__apellido">
+              <span>Apellido</span>
+              <input name="lastName" type="text" placeholder="Apellido" />
+              <div class="advertencia disactive">valor requerido</div>
+            </div>
+          </div>
+          <div class="datosCard">
+            <div class="formularioCard__fechaExpiracion">
+              <span>Fecha de expiración</span>
+              <input name="fechaExpiracion" type="text" placeholder="fecha de expiración" />
+              <div class="advertencia disactive">valor requerido</div>
+            </div>
+            <div class="formularioCard__cvv">
+              <span>CVV</span>
+              <input name="cvv" type="text" placeholder="CVV" />
+              <div class="advertencia disactive">CVV invalido</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btnSaveCard">Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../js/sistemaPagos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

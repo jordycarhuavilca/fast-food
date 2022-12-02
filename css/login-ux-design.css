@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap');
+:root {
+  --font-tittle: 'Poppins', sans-serif;
+  --font-text: 'Poppins', sans-serif;
+  --first-color: #0071e3;
+  --first-color-hover: #0971d8;
+}
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+.login-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: display 0.18s ease;
+  display: none;
+}
+.login-in-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: max-content;
+  background-color: #000;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+}
+.login-in-info button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.login-in-info span {
+  color: #fff;
+}
+.login-in .bi-check-circle-fill {
+  color: rgb(28, 173, 113);
+}
+.login-in .bi-x-circle-fill {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.check-person {
+  padding-top: 0.5rem;
+  transition: display 0.18s ease;
+  display: none;
+}
+.check-person svg {
+  color: #000;
+}
+.containerLogin {
+  display: grid;
+  place-items: center;
+}
+.create-account {
+  position: absolute;
+  right: -40rem;
+  opacity: 0;
+}
+.active {
+  position: relative;
+}
+.containerLogin.active .create-account {
+  position: relative;
+  right: 0;
+  top: 0rem;
+  margin: 0 auto;
+  opacity: 1;
+  transform: translateY(-92%);
+}
+.containerLogin.active .login {
+  margin-left: -1200px;
+  opacity: 0;
+}
+* {
+  font-family: var(--font-text);
+}
+.login {
+  /* padding-top: 1rem; */
+  display: flex;
+  flex-flow: row;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  transition: margin-left 0.6s ease, opacity 0.19s ease;
+}
+.login__contai-formulario {
+  padding: 2rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  display: flex;
+  gap: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.login-forms {
+  width: 50%;
+}
+.login__formulario {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  /* align-items: center; */
+  gap: 0.8rem;
+}
+.login__formulario h1 {
+  color: var(--first-color);
+  font-size: clamp(10px, 2.5em, 15vw);
+  position: relative;
+  height: 3.4rem;
+}
+.login__formulario h1::before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  height: 0.2rem;
+  width: 14%;
+  background-color: var(--first-color);
+}
+.login__redes-sociales-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.login__redes-sociales-icons a i {
+  font-size: 1rem;
+}
+.login__redes-sociales-icons a:hover {
+  color: var(--first-color);
+}
+.login__inputs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* width: 100%; */
+}
+.login__email,
+.login__password {
+  position: relative;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  width: clamp(14rem, 22rem, 22vw);
+}
+.login__email input,
+.login__password input {
+  font-size: 0.7rem;
+  width: 100%;
+}
+.login__inputs span {
+  position: absolute;
+  top: 0;
+  left: 6%;
+  font-size: 0.7rem;
+  font-family: var(--font-text);
+  background: #fff;
+}
+::placeholder {
+  font-size: 0.7rem;
+}
+input {
+  padding: 0.5rem;
+  /* border: 0; */
+}
+/* login__check-forgot */
+.login__check-forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.login__check-remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.login__check-forgot a,
+span {
+  font-size: clamp(0.5rem, 0.8rem, 1vw);
+  text-decoration: none;
+  color: #000;
+}
+.login__check-remember input {
+  accent-color: var(--first-color);
+  cursor: pointer;
+}
+.login__check-forgot a:hover {
+  text-decoration: underline;
+  color: var(--first-color);
+}
+.login__button-entrar button {
+  width: clamp(8rem, 10rem, 30vw);
+  font-size: clamp(0.8em, 1em, 1.5vw);
+  border: 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.4rem;
+  background: var(--first-color);
+  transition: linear 1s;
+  cursor: pointer;
+}
+.login__button-entrar button:hover {
+  background-color: var(--first-color-hover);
+}
+.conditions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+.conditions span {
+  font-size: clamp(0.7rem, 1rem, 1vw);
+}
+.conditions .login__terms:hover {
+  text-decoration: underline;
+}
+.conditions .login__terms:active {
+  color: var(--first-color);
+}
+.sign-up {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.sign-up__slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up__slogan h3 {
+  position: relative;
+}
+.sign-up__slogan h3::before {
+  content: '';
+  height: 0.2rem;
+  width: 14%;
+  left: 48%;
+  bottom: 0;
+  background-color: #000;
+  position: absolute;
+}
+.sign-up {
+  position: relative;
+}
+.sign-up__food_background img {
+  position: absolute;
+}
+#sign-up__img1 {
+  top: 0;
+  right: 0;
+}
+#sign-up__img2 {
+  bottom: 0;
+  left: 0;
+}
+#sign-up__img3 {
+  bottom: 0;
+  right: 0;
+}
+#sign-up__img4 {
+  top: 70%;
+  left: 0;
+}
+#sign-up__img5 {
+  top: 70%;
+  right: 0;
+}
+#sign-up__img6 {
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#sign-up__img7 {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#sign-up__img8 {
+  top: 0;
+  left: 0;
+}
+#sign-up__img9 {
+  top: 30%;
+  left: 0;
+}
+#sign-up__img10 {
+  top: 31%;
+  right: 0;
+}
+#sign-up__img11 {
+  top: 0;
+  right: 50%;
+  transform: translate(50%);
+}
+#sign-up__img12 {
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.sign-up__food_background p {
+  margin: 0;
+}
+.sign-up__btn-registrarme {
+  margin-top: 1rem;
+  width: clamp(8rem, 10rem, 30vw);
+  font-size: clamp(0.8em, 1em, 1.5vw);
+  border: 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.5rem;
+  background: var(--first-color);
+  transition: linear 1s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.sign-up__btn-registrarme:hover {
+  background-color: var(--first-color-hover);
+}
+@media screen and (max-width: 710px) {
+  .login {
+    padding-top: 1rem;
+  }
+  .login__contai-formulario {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  .login-forms {
+    width: 100%;
+  }
+  .sign-up {
+    width: 100%;
+    /* width: 252.67px; */
+    height: 406.8px;
+  }
+  .create-account {
+    width: 80% !important;
+    position: absolute;
+    top: -25rem !important;
+    opacity: 0;
+  }
+  .registrated-account {
+    /* transform: translateY(-3%); */
+    top: 17rem !important;
+    left: 38% !important;
+  }
+}
+
+/** Create new Account **/
+.create-account {
+  position: relative;
+  padding: 1rem 0;
+  padding: 0 2rem;
+  text-align: center;
+  width: 30%;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 1rem;
+  transition: margin-left 0.3s ease, opacity 0.5s ease;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+.create-account h2 {
+  font-size: clamp(1.4em, 1.5em, 2vw);
+}
+.create-account__inputs form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
+}
+.create-account__inputs input {
+  font-size: 0.7rem;
+  width: clamp(14rem, 12rem, 20vw);
+  height: 1rem;
+  padding-left: 2.2rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  border-color: #000;
+}
+.create-account__nombre div,
+.create-account__email div,
+.create-account__telefono div,
+.create-account__password div,
+.create-account__confirm-password div {
+  position: relative;
+  /* width: clamp(10rem, 12rem, 20vw); */
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.create-account__nombre,
+.create-account__email,
+.create-account__telefono,
+.create-account__password,
+.create-account__confirm-password {
+  /* width: clamp(10rem, 12rem, 20vw); */
+  width: clamp(17rem, 15rem, 24.2vw);
+  /* width: 25vw; */
+  background-color: #000;
+  border-radius: 0.3rem;
+  height: 2.3rem;
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-account__nombre i,
+.create-account__email i,
+.create-account__telefono i,
+.create-account__password i,
+.create-account__confirm-password i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: rgb(223, 223, 223);
+}
+.create-account__inputs ::placeholder {
+  color: rgb(223, 223, 223);
+  position: absolute;
+  left: 2.2rem;
+}
+.create-account__btn-create-account {
+  margin-top: 1rem;
+  width: clamp(8rem, 10rem, 30vw);
+  font-size: clamp(0.8em, 1em, 1.5vw);
+  border: 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.5rem;
+  background: var(--first-color);
+  transition: linear 1s;
+  cursor: pointer;
+  text-align: center;
+}
+.create-account__existAccount {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.create-account__existAccount span,
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(0.7rem, 1rem, 1vw);
+}
+.create-account__existAccount a:hover {
+  text-decoration: underline;
+}
+.registrated-account {
+  position: absolute;
+  top: 17rem;
+  left: 43%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  gap: 0.4rem;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1s ease;
+}
+.confirm-Account .registrated-account {
+  opacity: 1;
+  z-index: 0;
+}
+.confirm-Account .create-account {
+  left: -60rem;
+  opacity: 0;
+}
+.registrated-account i {
+  color: #0071e3;
+  font-size: 4rem;
+}
+.registrated-account__logo {
+  font-family: 'Erica One', cursive;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  color: #0071e3;
+}

@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+/*CONFIGURACION CABECERA*/
+.cabecera {
+  display: flex;
+  border-bottom: solid rgb(201, 201, 201) 1px;
+  padding-top: 8px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.regresar {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.regresar h4 {
+  margin-top: 7px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.regresar a {
+  color: black;
+  text-decoration: none;
+}
+
+.regresar img {
+  width: 30px;
+}
+
+.logo {
+  margin-left: 40%;
+}
+
+.logo img {
+  width: 23%;
+}
+
+/*CONFIGURACION*/
+.cuerpo {
+  padding: 50px 440px 0px 120px;
+}
+.cuerpo p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: rgb(121, 117, 117);
+}
+
+.cuerpo h2 {
+  font-size: 28px;
+}

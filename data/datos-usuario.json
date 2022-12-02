@@ -1,0 +1,14 @@
+[
+   {
+        "nombre" : "Jordy Joel",
+        "edad": "18",
+        "correo": "Jordy@gmail.com",
+        "password": "jordy@gmail2021"
+    },
+    {
+        "nombre" : "Luis Juan",
+        "edad": "21",
+        "correo": "Luis@gmail.com",
+        "password": "Luis@gmail2021"
+    }
+]

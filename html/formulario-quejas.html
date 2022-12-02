@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link of bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/formulario-quejas.css" />
+  </head>
+  <body>
+    <header class="comeback">
+      <a href="../inicio.html">
+        <button>
+          <i class="bi bi-arrow-left-short"></i>
+          <span class="comeback__text">Volver</span>
+        </button>
+      </a>
+      <h1 class="h4">FastFood</h1>
+    </header>
+    <div class="container">
+      <form
+        class="row g-3 needs-validation"
+        action="https://formsubmit.co/fb9030499334a3d0fea3789f1e99184f"
+        method="post"
+      >
+        <input type="text" required />
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value="Jordy"
+            required
+          />
+          <div class="valid-feedback">bien!</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input
+            name="apellido"
+            type="text"
+            class="form-control"
+            id="validationCustom02"
+            value="Carhuavilca"
+            required
+          />
+          <div class="valid-feedback">Bien!</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de Usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input
+              name="email"
+              type="text"
+              class="form-control"
+              id="validationCustomUsername"
+              aria-describedby="inputGroupPrepend"
+              required
+            />
+            <div class="invalid-feedback">Por favor eliga el nombre de Usuario.</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Quejas</label>
+          <textarea
+            class="form-control"
+            id="validationTextarea"
+            placeholder="Ejemplo"
+            name="message"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Por favor ingrese un mesaje en la caja de texto.</div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+            <label class="form-check-label" for="invalidCheck"> estoy de acuerdo </label>
+            <div class="invalid-feedback">Debes de estar de acuerdo antes de enviar.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  ;(() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach((form) => {
+      form.addEventListener(
+        'submit',
+        (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        },
+        false
+      )
+    })
+  })()
+  const buttonComeBack = document.querySelector('.comeback button')
+  const modificarButton = () => {
+    buttonComeBack
+  }
+  buttonComeBack.addEventListener('click', modificarButton)
+</script>

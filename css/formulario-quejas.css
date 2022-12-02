@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+/* 'Erica One', cursive */
+header {
+  /* position: relative; */
+  /* width: 100%; */
+}
+.comeback {
+  background-color: #fff;
+  position: relative;
+  padding: .4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid rgba(240, 240, 240, 0.812);
+  /* margin-bottom: 1rem; */
+}
+.comeback h1 {
+  font-family: 'Erica One', cursive;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #0071e3;
+}
+.comeback button {
+  position: absolute;
+  top: 50%;
+  left: 0.4rem;
+  text-decoration: none;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  border: 0;
+  font-weight: 600;
+  background: transparent;
+}
+.comeback a button span {
+  font-size: 0.8em;
+}
+.comeback a {
+  text-decoration: none;
+}
+.comeback i {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 400px) {
+  .comeback__text {
+    display: none;
+    visibility: hidden;
+  }
+}

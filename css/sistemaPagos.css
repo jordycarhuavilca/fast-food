@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --rappiBackground: #f1f1f1;
+  --backgroundDiv: #fff;
+  --smRem: 0.8rem;
+  --paddingRem: 0.7rem;
+  --btn-rappi: rgb(41, 216, 132);
+}
+input {
+  cursor: pointer;
+}
+body {
+  background-color: var(--rappiBackground);
+  overflow-x: hidden;
+  position: relative;
+}
+.contenedorSistemaPagos {
+  padding: 0.5rem var(--smRem);
+}
+.tiempoEntrega,
+.metodoPago,
+.detalles-compra {
+  border-radius: 0.4rem;
+  background-color: var(--backgroundDiv);
+}
+.tiempoEntrega {
+  display: flex;
+  flex-direction: column;
+}
+
+.tiempoEntrega__text,
+.metodoPago__text {
+  font-weight: 600;
+  padding: var(--paddingRem);
+  display: flex;
+  gap: 0.8rem;
+  border-bottom: 0.1rem solid #f8f8f8;
+}
+.tiempoEntrega__text i,
+.metodoPago__text i {
+  color: rgb(28, 173, 113);
+}
+.tiempoEntrega__detalles {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: var(--paddingRem);
+}
+.tiempoEntrega__detalles span {
+  font-size: clamp(0.3rem, 0.7rem, 1.5rem);
+}
+.tiempoEstimado {
+  font-weight: 600;
+}
+/************* Metodo para pagar********/
+.metodoPago {
+  margin-top: var(--smRem);
+  padding-bottom: var(--smRem);
+}
+.metodoPago__letter {
+  font-weight: 600;
+}
+.metodoPago__contenido {
+  margin: var(--smRem);
+  border: 0.1rem solid #d0d0d0;
+  border-radius: 0.4rem;
+}
+.metodoPago__form-check img {
+  width: 5rem;
+}
+.metodoPago__form-check {
+  padding: var(--paddingRem);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #d0d0d0;
+}
+.metoPago__conte i {
+  font-size: 1.5rem;
+}
+.metoPago__conte {
+  display: flex;
+  gap: 1rem;
+}
+.metoPago__conte span {
+  font-size: 0.7em;
+}
+.metodoPago__form-checkDife {
+  padding: var(--paddingRem);
+  display: flex;
+  justify-content: space-between;
+}
+.addCard {
+  /* padding: .8rem; */
+  position: relative;
+  z-index: 105;
+  cursor: pointer;
+  margin: var(--smRem);
+  border-top: 0.1rem solid #f8f8f8;
+}
+.containAddCard {
+  margin-top: var(--smRem);
+  padding: var(--paddingRem);
+  display: flex;
+  justify-content: space-between;
+  border: 0.1rem solid #d0d0d0;
+  border-radius: 0.4rem;
+}
+.containAddCard a {
+  text-decoration: none;
+  color: #000;
+}
+.addCard-text {
+  display: flex;
+  align-items: center;
+  gap: var(--smRem);
+}
+.addCard-text span {
+  font-size: 0.7em;
+}
+/**************Detalles Compras ************/
+.detalles-compra {
+  margin-top: var(--smRem);
+}
+.cantidadPropina {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.propina h3 {
+  font-weight: 600;
+}
+.propina span {
+  font-size: 0.6em;
+}
+.propina {
+  position: relative;
+  display: flex;
+  padding: var(--paddingRem);
+  flex-direction: column;
+}
+.propina::before {
+  content: '';
+  border-bottom: 0.1rem solid #f8f8f8;
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+}
+.cantidadPropina {
+  padding-top: 0.7rem;
+  width: 100%;
+}
+.cantidadPropina div {
+  /* width: 100%; */
+  border: 0.1rem solid #d0d0d0;
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.9rem;
+  font-size: 0.6em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cantidadPropina div span {
+  font-weight: 600;
+  font-size: 1em !important;
+}
+.propina h3 {
+  font-size: 1rem;
+}
+.precioPagar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: var(--paddingRem);
+}
+.precioPagar__resumen {
+  font-weight: 600;
+}
+.precioPagar div span {
+  font-size: 0.7em;
+}
+.precioPagar div {
+  display: flex;
+  justify-content: space-between;
+}
+.total,
+#propina {
+  font-weight: 600;
+  font-size: 1em !important;
+}
+/***********footer**********/
+footer {
+  width: 100%;
+  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+  padding: var(--paddingRem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  background-color: rgb(251, 251, 251);
+}
+.totalPagar span {
+  font-size: 0.6em;
+  color: #878787;
+}
+.btnHacerPedido button {
+  border: 0;
+  padding: 0.9rem 1.4rem;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: var(--btn-rappi);
+  border-radius: 50rem;
+}
+/* data card */
+.containerCompleteDataCard {
+  width: 100%;
+  transition: position 1s ease, display 1s ease;
+  background-color: rgb(251, 251, 251) !important;
+}
+.simulacionCard {
+  position: relative;
+  width: 14rem;
+  height: 8rem;
+  border-radius: 0.8rem;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.chip {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 2.2rem !important;
+  object-fit: cover;
+}
+.identityCard {
+  position: absolute;
+  background-color: #000;
+  width: 2rem;
+  height: 2rem;
+  /* padding: .4rem .4rem; */
+  border-radius: 100%;
+  top: 0.7rem;
+  right: 1rem;
+}
+.identityCard i {
+  position: absolute;
+  top: 15%;
+  transform: translateX(50%);
+  color: #fff;
+}
+.dot {
+  font-size: 1.6em;
+  position: absolute;
+  top: 43%;
+  left: 7%;
+  color: #fff;
+}
+.simulacionCard__nombres {
+  color: #fff;
+  overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: relative;
+  bottom: -5rem;
+  left: 1rem;
+  width: 9.5rem;
+  height: 1.3rem;
+}
+.simulacionCard__nombres .textName {
+  width: 9.5rem;
+}
+.fechaExpiracion {
+  color: #fff;
+  position: absolute;
+  bottom: 1.7rem;
+  right: 1.2rem;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+.containerCompleteDataCard .btnClose {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.containerCompleteDataCard i {
+  cursor: pointer;
+}
+.tittle {
+  background-color: rgb(251, 251, 251);
+  padding: var(--smRem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #ececec;
+  margin-bottom: 1rem;
+}
+.tittle h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+}
+.imgCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.imgCard img {
+  padding: 0.7rem 0;
+  width: 13rem;
+  transition: transform 1s ease;
+  object-fit: cover;
+}
+.imgCard .cardBack {
+  /* transform: rotateY(180deg); */
+}
+.numberCard {
+  padding: var(--paddingRem);
+  display: flex;
+  flex-direction: column;
+}
+.numberCard input {
+  width: 98%;
+}
+.requisitosCard span {
+  font-size: 0.6em;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.numberCard div,
+.advertencia {
+  font-size: 0.8em;
+  color: red;
+}
+::placeholder {
+  font-size: 0.7em;
+  padding: 0.3rem;
+}
+.formularioCard {
+  padding: var(--paddingRem);
+}
+.requisitosCard input {
+  cursor: text;
+  font-size: 0.7em;
+  padding: 0.5rem;
+  background-color: var(--rappiBackground);
+  border: 0;
+  outline: 0;
+}
+.datosComprador {
+  width: 100%;
+}
+.datosComprador,
+.datosCard {
+  display: flex;
+  align-items: center;
+}
+.formularioCard__nombre,
+.formularioCard__apellido,
+.formularioCard__fechaExpiracion,
+.formularioCard__cvv {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.formularioCard__nombre input,
+.formularioCard__apellido input,
+.formularioCard__fechaExpiracion input,
+.formularioCard__cvv input {
+  width: 95%;
+  /* border-bottom: .1rem solid rgb(41, 216, 132) !important; */
+}
+.card-footer {
+  height: 9.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card-footer button {
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(0.8em, 2em, 20%);
+  padding: 0.5rem;
+  background-color: var(--btn-rappi);
+  border-radius: 0.4rem;
+  width: 100%;
+}
+.opacityAlert-success {
+  opacity: 0;
+}
+.disOpacityAlert-success{
+  opacity: 1;
+} 
+.disactive {
+  display: none;
+}
+.active {
+  display: block;
+}
+body.off .containerCompleteDataCard {
+  position: absolute;
+  top: 10rem;
+  display: none;
+}
+body.on .containerCompleteDataCard {
+  position: absolute;
+  top: 0;
+  display: block;
+}
+body.off .contenedor {
+  display: block;
+}
+body.on .contenedor {
+  display: none;
+}
+/********* Añade Propina *********/
+body.opacityPropina .containerElegirPropina {
+  opacity: 0;
+  z-index: -999;
+}
+body.opacityPropina .elegirPropina {
+  opacity: 0;
+  /* z-index: 0; */
+}
+.containerElegirPropina {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 99;
+  position: absolute;
+  background-color: rgba(138, 138, 138, 0.401);
+}
+.elegirPropina {
+  transition: opacity 0.4s ease;
+  position: absolute;
+  z-index: 100;
+  top: 70vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  border-radius: 0.9rem;
+  background-color: #fff;
+  width: 20rem;
+  padding-bottom: 0.4rem;
+}
+.cardPropina {
+  display: flex;
+  padding: var(--paddingRem);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid #f8f8f8;
+}
+.cardPropina i {
+  cursor: pointer;
+}
+.cardPropina span {
+  font-weight: 600;
+}
+.elegirPropina__input {
+  padding: var(--paddingRem);
+  display: flex;
+  flex-direction: column;
+}
+.elegirPropina__input span {
+  margin-bottom: 0.5rem;
+  font-size: 0.6em;
+}
+.elegirPropina__input input {
+  display: flex;
+  flex-direction: column;
+  cursor: text;
+  font-size: 0.7em;
+  padding: 0.6rem;
+  background-color: var(--rappiBackground);
+  border: 0;
+  outline: 0;
+}
+.elegirPropina__input ::placeholder {
+  font-size: 0.7rem;
+}
+
+.button {
+  padding: var(--paddingRem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.button button,
+.sinPropina {
+  border: 0;
+  width: 95%;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: var(--btn-rappi);
+  border-radius: 50rem;
+}
+.sinPropina {
+  background-color: #fff !important;
+  border: 0.1rem solid var(--btn-rappi) !important;
+}
+.sinPropina span {
+  color: var(--btn-rappi);
+}
+.sinPropina:hover {
+  background-color: rgba(228, 255, 242, 0.823) !important;
+}
+.contaiSpinners{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  background-color: #fff;
+}
+.spinners{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.spinnerTxt{
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.spinnerTxt div{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 56%;
+  left: 40%;
+  font-weight: 600;
+  transform: translateX(-12%);
+
+}
+.inactivo{
+  opacity: 0;
+  z-index: -999;
+  display: none;
+}
+/* added from js */
+.spinnerCheckIconStyle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6rem;
+  color: rgb(41, 216, 132);
+}
+@media screen and (min-width: 870px) {
+  .contenedor {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .contenedorSistemaPagos {
+    display: flex;
+    gap: 2rem;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .contenedorTiempoEntrega,
+  .contenedorDetalles-compra {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedorDetalles-compra {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .detalles-compra {
+    margin: 0rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+    padding-top: 0.2rem;
+  }
+  footer {
+    border-radius: 0.4rem 0.5rem 0 0;
+    margin: 0;
+    position: sticky;
+  }
+  .elegirPropina {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+  }
+  .containerCompleteDataCard {
+    /* width: 20rem; */
+    /* height: 1rem; */
+    /* position: absolute; */
+    /* left: 50% ; */
+    /* bottom: 50rem !important; */
+    /* transform: translateX(-50%); */
+    /* overflow-y: scroll; */
+  }
+  .card-footer {
+    /* height: 3rem; */
+  }
+  .spinnersStyle {
+    color: var(--btn-rappi);
+    background-color: var(--btn-rappi);
+  }
+  .circleGrow{
+    display: none ;
+  }
+  .spinnerTxt div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    font-weight: 600;
+    transform: translateX(-12%);
+  }
+  .spinnerCheckIconStyle {
+    position: absolute;
+    top: 25%;
+    left: 51%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .spinnersStyle {
+    color: var(--btn-rappi);
+    background-color: var(--btn-rappi);
+  }
+  .circleGrow{
+    display: none ;
+  }
+  .spinnerTxt div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 68%;
+    left: 29%;
+    font-weight: 600;
+    transform: translateX(-17%);
+  }
+  .spinnerCheckIconStyle {
+    position: absolute;
+    top: 52%;
+    left: 51%;
+    transform: translateX(-50%);
+  }
+}

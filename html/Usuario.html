@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/160b06a6d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Usuario.css" />
+    <title>FastFood-Usuario</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="cabecera">
+        <div class="regresar">
+          <a href="../inicio.html"><img src="../img/img-usuario-condi-/back_arrow.png" alt="" /></a>
+          <h4><a href="../inicio.html">Volver</a></h4>
+        </div>
+        <div class="logo">
+          <img src="../img/img-usuario-condi-/logo02_FastFood.jpeg" alt="" />
+        </div>
+      </div>
+
+      <main>
+        <aside>
+          <img src="../img/img-usuario-condi-/Imagen_FastFood.png" alt="" />
+        </aside>
+
+        <section>
+          <h1>Regístrate</h1>
+          <h3 class="botonfacebook">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i> Continuar con Facebook</a>
+          </h3>
+          <br />
+          <h3 class="botongoogle">
+            <a href="#"><i class="fa-brands fa-google"></i> Continuar con Google</a>
+          </h3>
+          <h3 class="botonapple">
+            <a href="#"><i class="fa-brands fa-apple"></i> Continuar con Apple</a>
+          </h3>
+
+          <center>
+            <form id="usuario" action="">
+              <table>
+                <tr>
+                  <td>
+                    <input name="txtnombre" class="texto" type="text" placeholder="Nombre" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input name="txtapellido" class="texto" type="text" placeholder="Apellido" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input
+                      name="txtemail"
+                      class="texto"
+                      type="text"
+                      placeholder="Correo electrónico"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+                    <select class="seleccion" name="" id="">
+                      <option value=" ">+51</option>
+                      <option value="">+54</option>
+                      <option value="">+55</option>
+                      <option value="">+57</option>
+                      <option value="">+56</option>
+                    </select>
+                    <input name="txtfono" class="numero" type="text" placeholder="Numero" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </center>
+
+          <p>¿Ya tienes una cuenta? <a href="../html/Login.html">Inicia sesión aquí</a></p>
+          <p>
+            Al registrarte estás aceptando los
+            <a href="../html/Condiciones.html">Terminos y Condiciones y Políticas de Privacidad</a>
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
+<script src="../js/Usuario.js"></script>

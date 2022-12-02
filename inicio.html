@@ -5,34 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food</title>
-
+    <!-- link of swiper-css -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <!-- Swiper-css -->
+    <link rel="stylesheet" href="../css/slider-food.css" />
     <!-- link of bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
+    <!-- link bootstrap icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <!-- link for icons -->
+    <!-- link for icons boxicons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <!-- stylies -->
     <link rel="stylesheet" href="./css/estilos.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script src="js/main.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
+    <!-- css slider comidas -->
+    <link rel="stylesheet" href="../css/sliderComidas.css" />
   </head>
-
   <body>
     <div class="container-fluid">
       <header>
+        <nav class="nav-desplegable">
+          <div class="container-items d-flex flex-column">
+            <div class="nav-desplegable__icons d-flex justify-content-between px-2">
+              <a href="" class="img-fire"><img src="./img/flame-110.png" alt="" /></a>
+              <a href="" id="nav-desplegable__button-close"
+                ><i class="bi bi-x-circle-fill text-black-50"></i
+              ></a>
+            </div>
+            <div class="buttons-registrar d-flex justify-content-around">
+              <a href="./html/Usuario.html">
+                <input type="button" value="ingreso" class="btn-ingreso" />
+              </a>
+              <a href="./html/">
+                <input type="button" value="tarjeta" class="btn-tarjeta" />
+              </a>
+            </div>
+            <div class="container-secciones">
+              <h2 class="ps-5 h6 text-black-50 py-2">seccion</h2>
+              <ul class="d-flex flex-column gap-2">
+                <li>
+                  <a
+                    href="./html/Restaurante.html"
+                    class="desplegable__text d-flex align-items-center"
+                    ><p class="list-text">Thailandese Food</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Chinese Food</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Hamburguesa</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Japanese Food</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Comida Mexicana</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Pizza</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Pollo a la brasa</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="desplegable__text"
+                    ><p class="list-text">Platos Criollos</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="seccion-registro">
+              <h2 class="ps-5 h6 text-black-50 py-2">otros</h2>
+              <ul class="d-flex flex-column gap-4">
+                <a href=""><li>Registra tu restaurante</li></a>
+                <a href=""><li>Registra tu tienda</li></a>
+              </ul>
+            </div>
+            <div class="nacionality">
+              <a href="" class="d-flex justify-content-between align-items-center">
+                <div class="nacionality__countries-icon d-flex align-items-center gap-1">
+                  <img class="countries-icons" src="./img/peru.png" alt="" />
+                  <p id="id-country" class="text-black txtContries">Peru</p>
+                </div>
+                <i class="bi bi-chevron-right text-black-50"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
         <div class="row d-flex flex-nowrap align-items-center">
           <!-- icon hamburger menu -->
           <div id="icon-list" class="col-auto">
@@ -65,25 +150,40 @@
               </a>
             </form>
           </div>
+
           <!--User-->
           <div class="container-user-carrito col-auto d-flex align-items-center">
-            <a href="">
+            <a href="./html/Login-ux-design.html">
               <i class="bi bi-person-circle text-black" style="font-size: 1.2rem"></i>
             </a>
             <a
               class="container-user-carrito_txt_usuario d-none d-xl-block txt_font2_menuDespleagable"
-              href=""
+              href="./html/Login-ux-design.html"
               >Usuario</a
             >
-            <a href="">
+            <a href="./html/carrito-compras.html">
               <i class="bi bi-cart-fill text-black" style="font-size: 1.3em"></i>
             </a>
           </div>
         </div>
+        <!-- Nav desplegable -->
       </header>
+      <!-- Seccion Announcement -->
+      <section class="annou disactive" id="annou">
+        <div class="annou__content">
+          <img class="annou__icon3dFrench-fries" src="./img/icon-food/french_fries.png" alt="" />
+          <p class="annou__text">¿Nuevo en Fast Food? Disfuta de...</p>
+          <span class="annou__text-span">¡Entrega gratis por 30 dias!</span>
+          <a href="./html/Login.html" class="btn-Registar">Registrarme</a>
+          <a href="./html/Condiciones.html" class="annou__text-terms">Terminos y condiciones</a>
+        </div>
+        <i class="annou__btn-x bi bi-x-circle-fill text-white" id="btn-x"></i>
+      </section>
+
       <!-- banner -->
+
       <div class="banner d-flex justify-content-around align-items-center">
-        <aside class="aside-left">
+        <aside class="banner___aside-left">
           <img
             id="banner__junkFood"
             src="./img/icon-food/burger_fast_food_icon_181517.png"
@@ -93,98 +193,398 @@
         <section class="banner__text d-flex flex-column align-items-center text-center">
           <h1>¡30 días de entrega gratis!</h1>
           <p class="h3">a todo el <span>Peru</span></p>
-          <a href="" class="banner__btn-pedir-ahora"> pide ahora </a>
+          <a href="./html/Restaurante.html" class="banner__btn-pedir-ahora"> pide ahora </a>
         </section>
-        <aside class="aside-right align-self-end">
+        <aside class="banner___aside-right align-self-end">
           <article class="align-self-end">
             <img src="./img/bermuda-food-delivery-2.png" alt="" />
           </article>
         </aside>
       </div>
-    </div>
-    <!-- menu desplegable -->
-    <nav class="nav-desplegable">
-      <div class="container-items d-flex flex-column">
-        <div class="nav-desplegable__icons d-flex justify-content-between px-2">
-          <a href="" class="img-fire"><img src="./img/flame-110.png" alt="" /></a>
-          <a href="" id="nav-desplegable__button-close"
-            ><i class="bi bi-x-circle-fill text-black-50"></i
-          ></a>
-        </div>
-        <div class="buttons-registrar d-flex justify-content-around">
-          <input type="button" value="ingreso" class="btn-ingreso" />
-          <input type="button" value="tarjeta" class="btn-tarjeta" />
-        </div>
-        <div class="container-secciones">
-          <h2 class="ps-5 h6 text-black-50 py-2">seccion</h2>
-          <ul class="d-flex flex-column gap-2">
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Thailandese Food</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Chinese Food</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Hamburguesa</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Japanese Food</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Comida Mexicana</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Pizza</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Pollo a la brasa</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="d-flex justify-content-between"
-                ><p class="list-text">Platos Criollos</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="seccion-registro">
-          <h2 class="ps-5 h6 text-black-50 py-2">otros</h2>
-          <ul class="d-flex flex-column gap-4">
-            <a href=""><li>Registra tu restaurante</li></a>
-            <a href=""><li>Registra tu tienda</li></a>
-          </ul>
-        </div>
-        <div class="nacionality">
-          <a href="" class="d-flex justify-content-between align-items-center">
-            <div class="nacionality__countries-icon d-flex align-items-center gap-1">
-              <img class="countries-icons" src="./img/peru.png" alt="" />
-              <p id="id-country" class="text-black txtContries">Peru</p>
+      <!-- sliders food -->
+      <div class="slider-food">
+        <span class="h4">¿Necesitas algo más?</span>
+        <!-- slider -->
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen1.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen2.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen3.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen4.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen5.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen6.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen7.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen8.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href=""
+                      ><img src="../img/slider-food/imagen9.jpg" alt="" class="card-img"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                </div>
+              </div>
             </div>
-            <i class="bi bi-chevron-right text-black-50"></i
-          ></a>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-    </nav>
+      <!-- testimonial cards -->
+      <!-- <div class="container-cards d-flex flex-column">
+        <h2 class="card__comments align-self-center" h3>Comen<span>tarios</span></h2>
+        <div class="cards">
+          <div class="testimonial-cards">
+            <div class="card-item" data-id="1">
+              <img
+                src="./img/faces/pexels-ike-louie-natividad-2709388.jpg"
+                class="card__img card-img-top"
+                alt="..."
+                data-id="1"
+              />
+              <div class="card-body" data-id="1">
+                <h5 class="card-title" data-id="1">Mary Nova</h5>
+                <p class="card-text" data-id="1">
+                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
+                  lado
+                </p>
+                <a href="#" class="cardBody__btn-like" data-id="1">¡Registrate ahora!</a>
+              </div>
+            </div>
+            <div class="card-item" data-id="2">
+              <img
+                src="./img/faces/pexels-mateus-souza-3586798.jpg"
+                class="card__img card-img-top"
+                alt="..."
+                data-id="2"
+              />
+              <div class="card-body" data-id="2">
+                <h5 class="card-title" data-id="2">Mary Nova</h5>
+                <p class="card-text" data-id="2">
+                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
+                  lado
+                </p>
+                <a href="#" class="cardBody__btn-like" data-id="2">¡Registrate ahora!</a>
+              </div>
+            </div>
+            <div class="card-item" data-id="3">
+              <img
+                src="./img/faces/pexels-cottonbro-studio-5990130.jpg"
+                class="card__img card-img-top"
+                alt="..."
+                data-id="3"
+              />
+              <div class="card-body" data-id="3">
+                <h5 class="card-title" data-id="3">Miriam Diaz</h5>
+                <p class="card-text" data-id="3">
+                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
+                  lado
+                </p>
+                <a href="#" class="cardBody__btn-like" data-id="3">¡Registrate ahora!</a>
+              </div>
+            </div>
+            <div class="card-item" data-id="4">
+              <img
+                src="./img/faces/pexels-tolga-aksoy-14081789.jpg"
+                class="card__img card-img-top"
+                alt="..."
+                data-id="4"
+              />
+              <div class="card-body" data-id="4">
+                <h5 class="card-title" data-id="4">Miriam Diaz</h5>
+                <p class="card-text" data-id="4">
+                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
+                  lado
+                </p>
+                <a href="#" class="cardBody__btn-like" data-id="4">¡Registrate ahora!</a>
+              </div>
+            </div>
+            <div class="card-item" data-id="5">
+              <img
+                src="./img/faces/pexels-ash-valiente-3533228.jpg"
+                class="card__img card-img-top"
+                alt="..."
+                data-id="5"
+              />
+              <div class="card-body" data-id="5">
+                <h5 class="card-title" data-id="5">Miriam Diaz</h5>
+                <p class="card-text" data-id="5">
+                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
+                  lado
+                </p>
+                <a href="#" class="cardBody__btn-like" data-id="5">¡Registrate ahora!</a>
+              </div>
+            </div>
+            <div class="card-item" data-id="6">
+              <img
+                src="./img/faces/pexels-ann-martynova-3484670.jpg"
+                class="card__img card-img-top"
+                alt="..."
+                data-id="6"
+              />
+              <div class="card-body" data-id="6">
+                <h5 class="card-title" data-id="6">Miriam Diaz</h5>
+                <p class="card-text" data-id="6">
+                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
+                  lado
+                </p>
+                <a href="#" class="cardBody__btn-like" data-id="6">¡Registrate ahora!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="sliderTestimo">
+        <div class="slider">
+          <div class="sliderTestimo__header">
+            <!-- <span>Es Hora de Meriendar!</span> -->
+            <div class="arrows">
+              <i class="bx bx-chevron-left" id="btnLeft"></i>
+              <i class="bx bx-chevron-right" id="btnRight"></i>
+            </div>
+          </div>
+          <div class="sliderTestimo__body">
+            <div class="sliderTestimo__rueda">
+              <a class="img1">
+                <div class="sliderTestimo-img img1" >
+                  <img src="../img/sliderComida/banquete.jpg" alt="" />
+                </div>
+              </a>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger1 (1).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (2).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger5.jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (10).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/tacos.jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/postre.jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/postre (3).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/pizza.jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger1 (11).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger1 (13).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (6).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu.jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (5).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger1 (11).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (8).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (4).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger1 (23).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/menu (10).jpg" alt="" />
+              </div>
+              <div class="sliderTestimo-img">
+                <img src="../img/sliderComida/hamburger1 (11).jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="containerInfo">
+        <div class="footer__content">
+          <ul class="footer__listItems">
+            <li class="footer__listItem"><a href="">Quiénes somos</a></li>
+            <li class="footer__listItem"><a href="">Termino y Condiciones</a></li>
+            <li class="footer__listItem"><a href="">Privacidad</a></li>
+            <li class="footer__listItem"><a href="">Sé parte de FastFood</a></li>
+            <li class="footer__listItem"><a href="">Blog</a></li>
+          </ul>
+          <ul class="footer__listItems">
+            <li class="footer__listItem"><a href="">Top comidas</a></li>
+            <li class="footer__listItem"><a href="">Top Cadenas</a></li>
+            <li class="footer__listItem"><a href="">Top Ciudades</a></li>
+          </ul>
+          <ul class="footer__listItems">
+            <li class="footer__listItem"><a href="">Registrate</a></li>
+            <li class="footer__listItem"><a href="">Centro de Socios</a></li>
+            <li class="footer__listItem"><a href="">Ayuda</a></li>
+          </ul>
+          <ul class="footer__listItems">
+            <li class="footer__listItem"><a href="">Acuerdos corporativos</a></li>
+          </ul>
+        </div>
+        <div class="footer__redesSociales">
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
+<script src="./js/infoRestaurant.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  defer
+></script>
+<!-- main--js  -->
+<script src="js/main.js" defer></script>
+<!-- bootstrap js -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  defer
+></script>
+<!-- Swiper-js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+<!--Uncomment this line-->
+<script src="../js/slider.js" defer></script>
+<script src="./js/LoginData.js"></script>
+<script src="../js/sliderComidas.js"></script>

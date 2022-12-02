@@ -1,0 +1,47 @@
+:root {
+  --width: 10rem;
+}
+.slider {
+  /* display: flex; */
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.sliderTestimo__header {
+  width: 100%;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.arrows {
+  display: flex;
+  gap: 0.9rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.sliderTestimo__body {
+  /* padding-left: 1rem; */
+  width: 100%;
+}
+.sliderTestimo__rueda {
+  /* flex-shrink: 0; */
+  padding-top: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+.sliderTestimo-img {
+  width: var(--width);
+  flex-shrink: 0;
+  /* transition: margin-left 1s ease,opacity 2s ease;   */
+}
+.sliderTestimo-img img {
+  width: var(--width);
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 10rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
