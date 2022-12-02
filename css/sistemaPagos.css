@@ -95,7 +95,7 @@ body {
 .addCard {
   /* padding: .8rem; */
   position: relative;
-  z-index: 105;
+  z-index: 90;
   cursor: pointer;
   margin: var(--smRem);
   border-top: 0.1rem solid #f8f8f8;
@@ -290,6 +290,7 @@ footer {
   font-size: 0.6em;
   font-weight: 500;
 }
+/* container complete data */
 .containerCompleteDataCard .btnClose {
   cursor: pointer;
   background: transparent;
@@ -306,6 +307,8 @@ footer {
   justify-content: space-between;
   border-bottom: 0.1rem solid #ececec;
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 9999;
 }
 .tittle h2 {
   font-size: 1.2em;
@@ -403,9 +406,9 @@ footer {
 .opacityAlert-success {
   opacity: 0;
 }
-.disOpacityAlert-success{
+.disOpacityAlert-success {
   opacity: 1;
-} 
+}
 .disactive {
   display: none;
 }
@@ -522,25 +525,25 @@ body.opacityPropina .elegirPropina {
 .sinPropina:hover {
   background-color: rgba(228, 255, 242, 0.823) !important;
 }
-.contaiSpinners{
+.contaiSpinners {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 150;
   background-color: #fff;
 }
-.spinners{
+.spinners {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
 }
-.spinnerTxt{
+.spinnerTxt {
   display: block;
   height: 100%;
   position: relative;
 }
-.spinnerTxt div{
+.spinnerTxt div {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -548,9 +551,8 @@ body.opacityPropina .elegirPropina {
   left: 40%;
   font-weight: 600;
   transform: translateX(-12%);
-
 }
-.inactivo{
+.inactivo {
   opacity: 0;
   z-index: -999;
   display: none;
@@ -618,10 +620,10 @@ body.opacityPropina .elegirPropina {
     color: var(--btn-rappi);
     background-color: var(--btn-rappi);
   }
-  .circleGrow{
-    display: none ;
+  .circleGrow {
+    display: none;
   }
-  .spinnerTxt div{
+  .spinnerTxt div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -642,10 +644,10 @@ body.opacityPropina .elegirPropina {
     color: var(--btn-rappi);
     background-color: var(--btn-rappi);
   }
-  .circleGrow{
-    display: none ;
+  .circleGrow {
+    display: none;
   }
-  .spinnerTxt div{
+  .spinnerTxt div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -660,4 +662,8 @@ body.opacityPropina .elegirPropina {
     left: 51%;
     transform: translateX(-50%);
   }
+}
+.textName,
+.fechaExpiracion {
+  color: #fff;
 }

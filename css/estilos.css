@@ -107,6 +107,19 @@ body {
   font-family: var(--font-family);
   font-size: var(--text-size);
 }
+
+.numerito {
+  background-color:#000000;
+  color:  #ffffff;
+  padding: .25rem .25rem;
+  border-radius: .25rem;
+}
+
+.boton-carrito.active .numerito {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .disactive {
   display: none !important;
 }
@@ -565,15 +578,15 @@ li:hover {
   color: #000;
   font-size: 0.8em;
 }
-.footer__redesSociales{
-  padding: .9rem;
+.footer__redesSociales {
+  padding: 0.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   background: var(--body-color);
 }
-.footer__redesSociales a i{
+.footer__redesSociales a i {
   font-size: 1.4rem;
 }
 .footer__redesSociales a {

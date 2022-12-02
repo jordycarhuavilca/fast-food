@@ -80,14 +80,3 @@ setInterval(Banner__cambiarImagenes, 1000)
 setTimeout(() => {
   annoucement.classList.toggle('active')
 }, 3000)
-const img1 = document.querySelector('.img1')
-const firstImg = document.querySelector('.img1 img')
-function getImg(){
-  const urlImg = firstImg.getAttribute('src')
-  // const imf = new transmiteImg()
-  // imf.catchImg(urlImg)
-  img1.setAttribute('href',"./html/infoRestaurant.html")
-  return urlImg
-}
-img1.addEventListener('click',getImg())
-export{getImg}

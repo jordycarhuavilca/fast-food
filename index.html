@@ -25,10 +25,13 @@
     <link rel="stylesheet" href="./css/estilos.css" />
     <!-- css slider comidas -->
     <link rel="stylesheet" href="./css/sliderComidas.css" />
+    <!-- searchInfomation stylies -->
+    <link rel="stylesheet" href="./css/search-bar-information.css" />
   </head>
   <body>
     <div class="container-fluid">
       <header>
+        <!-- Nav desplegable -->
         <nav class="nav-desplegable">
           <div class="container-items d-flex flex-column">
             <div class="nav-desplegable__icons d-flex justify-content-between px-2">
@@ -38,7 +41,7 @@
               ></a>
             </div>
             <div class="buttons-registrar d-flex justify-content-around">
-              <a href="./html/Usuario.html">
+              <a href="./html/Login-ux-design.html">
                 <input type="button" value="ingreso" class="btn-ingreso" />
               </a>
               <a href="./html/">
@@ -50,50 +53,46 @@
               <ul class="d-flex flex-column gap-2">
                 <li>
                   <a
-                    href="./html/Restaurante.html"
+                    href="./html/carrito/comida__tailandesa.html"
                     class="desplegable__text d-flex align-items-center"
-                    ><p class="list-text">Thailandese Food</p>
+                    ><p class="list-text">Comida tailandesa</p>
                     <i class="bi bi-chevron-right"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="" class="desplegable__text d-flex justify-content-between"
-                    ><p class="list-text">Chinese Food</p>
+                  <a
+                    href="./html/carrito/comida__china.html"
+                    class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Comida china</p>
                     <i class="bi bi-chevron-right"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="" class="desplegable__text d-flex justify-content-between"
+                  <a
+                    href="./html/carrito/hamburguesas.html"
+                    class="desplegable__text d-flex justify-content-between"
                     ><p class="list-text">Hamburguesa</p>
                     <i class="bi bi-chevron-right"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="" class="desplegable__text d-flex justify-content-between"
-                    ><p class="list-text">Japanese Food</p>
+                  <a
+                    href="./html/carrito/comida__japonesa.html"
+                    class="desplegable__text d-flex justify-content-between"
+                    ><p class="list-text">Comida japonesa</p>
                     <i class="bi bi-chevron-right"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="" class="desplegable__text d-flex justify-content-between"
+                  <a
+                    href="./html/carrito/comida__mexicana.html"
+                    class="desplegable__text d-flex justify-content-between"
                     ><p class="list-text">Comida Mexicana</p>
                     <i class="bi bi-chevron-right"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="" class="desplegable__text d-flex justify-content-between"
-                    ><p class="list-text">Pizza</p>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="" class="desplegable__text d-flex justify-content-between"
-                    ><p class="list-text">Pollo a la brasa</p>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="" class="desplegable__text"
+                  <a href="./html/carrito/comida__criolla.html" class="desplegable__text"
                     ><p class="list-text">Platos Criollos</p>
                     <i class="bi bi-chevron-right"></i
                   ></a>
@@ -126,7 +125,7 @@
             </a>
           </div>
           <div class="col-auto d-flex d-none d-md-block">
-            <a class="logo-tittle" href="inicio.html">FastFood</a>
+            <a class="logo-tittle" href="./index.html">FastFood</a>
           </div>
           <div class="style-container-location col-1 d-none d-lg-block">
             <div>
@@ -137,7 +136,7 @@
             </div>
           </div>
           <!-- Search-bar -->
-          <div class="col container-search-bar">
+          <div class="menuPrincipal col container-search-bar">
             <form
               action=""
               method="dialog"
@@ -145,12 +144,40 @@
             >
               <img class="logo-img" src="./img/flame-110.png" alt="" width="12em" height="12em" />
               <input type="text" placeholder="Buscar en Fast Food" class="search" />
+              <div class="searchInformation desapareceSearchBarList">
+                <div class="search__sugerencias">
+                  <span class="search__sugerenciasTxt">Sugerencias</span>
+                  <i class="bi bi-x-circle-fill"></i>
+                </div>
+                <ul class="searchListInformation">
+                  <a href="" class="desapareceSearchBarItems">
+                    <li class="searchItem">comida tailandesa</li>
+                  </a>
+                  <a href="" class="desapareceSearchBarItems">
+                    <li class="searchItem">comida china</li>
+                  </a>
+                  <a href="" class="desapareceSearchBarItems">
+                    <li class="searchItem">hamburguesa</li>
+                  </a>
+                  <a href="" class="desapareceSearchBarItems">
+                    <li class="searchItem">comida japonesa</li>
+                  </a>
+                  <a href="" class="desapareceSearchBarItems">
+                    <li class="searchItem">comida Mexicana</li>
+                  </a>
+                  <a href="" class="desapareceSearchBarItems">
+                    <li class="searchItem">platos Criollos</li>
+                  </a>
+                  <div class="notFound desapareceNotFound">
+                    <i class="bi bi-emoji-frown"></i> <span>Lo sentimos</span>
+                  </div>
+                </ul>
+              </div>
               <a href="">
                 <i class="icon-search bi bi-search text-black-50"></i>
               </a>
             </form>
           </div>
-
           <!--User-->
           <div class="container-user-carrito col-auto d-flex align-items-center">
             <a href="./html/Login-ux-design.html">
@@ -161,12 +188,12 @@
               href="./html/Login-ux-design.html"
               >Usuario</a
             >
-            <a href="./html/carrito-compras.html">
-              <i class="bi bi-cart-fill text-black" style="font-size: 1.3em"></i>
+            <a href="./html/carrito/carrito.html">
+              <i class="bi bi-cart-fill icono__carro"></i>
+              <span id="numerito" class="numerito">0</span>
             </a>
           </div>
         </div>
-        <!-- Nav desplegable -->
       </header>
       <!-- Seccion Announcement -->
       <section class="annou disactive" id="annou">
@@ -174,14 +201,13 @@
           <img class="annou__icon3dFrench-fries" src="./img/icon-food/french_fries.png" alt="" />
           <p class="annou__text">¿Nuevo en Fast Food? Disfuta de...</p>
           <span class="annou__text-span">¡Entrega gratis por 30 dias!</span>
-          <a href="./html/Login.html" class="btn-Registar">Registrarme</a>
+          <a href="./html/Login-ux-design.html" class="btn-Registar">Registrarme</a>
           <a href="./html/Condiciones.html" class="annou__text-terms">Terminos y condiciones</a>
         </div>
         <i class="annou__btn-x bi bi-x-circle-fill text-white" id="btn-x"></i>
       </section>
 
       <!-- banner -->
-
       <div class="banner d-flex justify-content-around align-items-center">
         <aside class="banner___aside-left">
           <img
@@ -193,7 +219,9 @@
         <section class="banner__text d-flex flex-column align-items-center text-center">
           <h1>¡30 días de entrega gratis!</h1>
           <p class="h3">a todo el <span>Peru</span></p>
-          <a href="./html/Restaurante.html" class="banner__btn-pedir-ahora"> pide ahora </a>
+          <a href="./html/carrito/comida__china.html" class="banner__btn-pedir-ahora">
+            pide ahora
+          </a>
         </section>
         <aside class="banner___aside-right align-self-end">
           <article class="align-self-end">
@@ -214,12 +242,12 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen1.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen1.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Langostinos</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -228,13 +256,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen2.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen2.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Estofado de carne</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -243,13 +271,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen3.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen3.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Lomo Saltado</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -258,13 +286,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen4.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen4.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Ramen</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -273,13 +301,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen5.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen5.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Ensala de Futras</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -288,13 +316,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen6.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen6.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Hamburguesa</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -303,13 +331,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen7.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen7.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Albondigas</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -318,13 +346,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen8.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen8.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Arroz a la cubana</h2>
                 </div>
               </div>
               <div class="card swiper-slide">
@@ -333,13 +361,13 @@
 
                   <div class="card-image">
                     <a href=""
-                      ><img src="../img/slider-food/imagen9.jpg" alt="" class="card-img"
+                      ><img src="./img/slider-food/imagen9.jpg" alt="" class="card-img"
                     /></a>
                   </div>
                 </div>
 
                 <div class="card-content">
-                  <h2 class="name">David Dell</h2>
+                  <h2 class="name">Pasta</h2>
                 </div>
               </div>
             </div>
@@ -350,110 +378,6 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <!-- testimonial cards -->
-      <!-- <div class="container-cards d-flex flex-column">
-        <h2 class="card__comments align-self-center" h3>Comen<span>tarios</span></h2>
-        <div class="cards">
-          <div class="testimonial-cards">
-            <div class="card-item" data-id="1">
-              <img
-                src="./img/faces/pexels-ike-louie-natividad-2709388.jpg"
-                class="card__img card-img-top"
-                alt="..."
-                data-id="1"
-              />
-              <div class="card-body" data-id="1">
-                <h5 class="card-title" data-id="1">Mary Nova</h5>
-                <p class="card-text" data-id="1">
-                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
-                  lado
-                </p>
-                <a href="#" class="cardBody__btn-like" data-id="1">¡Registrate ahora!</a>
-              </div>
-            </div>
-            <div class="card-item" data-id="2">
-              <img
-                src="./img/faces/pexels-mateus-souza-3586798.jpg"
-                class="card__img card-img-top"
-                alt="..."
-                data-id="2"
-              />
-              <div class="card-body" data-id="2">
-                <h5 class="card-title" data-id="2">Mary Nova</h5>
-                <p class="card-text" data-id="2">
-                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
-                  lado
-                </p>
-                <a href="#" class="cardBody__btn-like" data-id="2">¡Registrate ahora!</a>
-              </div>
-            </div>
-            <div class="card-item" data-id="3">
-              <img
-                src="./img/faces/pexels-cottonbro-studio-5990130.jpg"
-                class="card__img card-img-top"
-                alt="..."
-                data-id="3"
-              />
-              <div class="card-body" data-id="3">
-                <h5 class="card-title" data-id="3">Miriam Diaz</h5>
-                <p class="card-text" data-id="3">
-                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
-                  lado
-                </p>
-                <a href="#" class="cardBody__btn-like" data-id="3">¡Registrate ahora!</a>
-              </div>
-            </div>
-            <div class="card-item" data-id="4">
-              <img
-                src="./img/faces/pexels-tolga-aksoy-14081789.jpg"
-                class="card__img card-img-top"
-                alt="..."
-                data-id="4"
-              />
-              <div class="card-body" data-id="4">
-                <h5 class="card-title" data-id="4">Miriam Diaz</h5>
-                <p class="card-text" data-id="4">
-                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
-                  lado
-                </p>
-                <a href="#" class="cardBody__btn-like" data-id="4">¡Registrate ahora!</a>
-              </div>
-            </div>
-            <div class="card-item" data-id="5">
-              <img
-                src="./img/faces/pexels-ash-valiente-3533228.jpg"
-                class="card__img card-img-top"
-                alt="..."
-                data-id="5"
-              />
-              <div class="card-body" data-id="5">
-                <h5 class="card-title" data-id="5">Miriam Diaz</h5>
-                <p class="card-text" data-id="5">
-                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
-                  lado
-                </p>
-                <a href="#" class="cardBody__btn-like" data-id="5">¡Registrate ahora!</a>
-              </div>
-            </div>
-            <div class="card-item" data-id="6">
-              <img
-                src="./img/faces/pexels-ann-martynova-3484670.jpg"
-                class="card__img card-img-top"
-                alt="..."
-                data-id="6"
-              />
-              <div class="card-body" data-id="6">
-                <h5 class="card-title" data-id="6">Miriam Diaz</h5>
-                <p class="card-text" data-id="6">
-                  La mejor que pagina. Lo mejor es que todas las comidas lo encuentras en un solo
-                  lado
-                </p>
-                <a href="#" class="cardBody__btn-like" data-id="6">¡Registrate ahora!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="sliderTestimo">
         <div class="slider">
           <div class="sliderTestimo__header">
@@ -471,61 +395,61 @@
                 </div>
               </a>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger1 (1).jpg" alt="" />
+                <img src="./img/sliderComida/hamburger1 (1).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (2).jpg" alt="" />
+                <img src="./img/sliderComida/menu (2).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger5.jpg" alt="" />
+                <img src="./img/sliderComida/hamburger5.jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (10).jpg" alt="" />
+                <img src="./img/sliderComida/menu (10).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/tacos.jpg" alt="" />
+                <img src="./img/sliderComida/tacos.jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/postre.jpg" alt="" />
+                <img src="./img/sliderComida/postre.jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/postre (3).jpg" alt="" />
+                <img src="./img/sliderComida/postre (3).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/pizza.jpg" alt="" />
+                <img src="./img/sliderComida/pizza.jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger1 (11).jpg" alt="" />
+                <img src="./img/sliderComida/hamburger1 (11).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger1 (13).jpg" alt="" />
+                <img src="./img/sliderComida/hamburger1 (13).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (6).jpg" alt="" />
+                <img src="./img/sliderComida/menu (6).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu.jpg" alt="" />
+                <img src="./img/sliderComida/menu.jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (5).jpg" alt="" />
+                <img src="./img/sliderComida/menu (5).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger1 (11).jpg" alt="" />
+                <img src="./img/sliderComida/hamburger1 (11).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (8).jpg" alt="" />
+                <img src="./img/sliderComida/menu (8).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (4).jpg" alt="" />
+                <img src="./img/sliderComida/menu (4).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger1 (23).jpg" alt="" />
+                <img src="./img/sliderComida/hamburger1 (23).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/menu (10).jpg" alt="" />
+                <img src="./img/sliderComida/menu (10).jpg" alt="" />
               </div>
               <div class="sliderTestimo-img">
-                <img src="../img/sliderComida/hamburger1 (11).jpg" alt="" />
+                <img src="./img/sliderComida/hamburger1 (11).jpg" alt="" />
               </div>
             </div>
           </div>
@@ -549,7 +473,7 @@
           <ul class="footer__listItems">
             <li class="footer__listItem"><a href="">Registrate</a></li>
             <li class="footer__listItem"><a href="">Centro de Socios</a></li>
-            <li class="footer__listItem"><a href="">Ayuda</a></li>
+            <li class="footer__listItem"><a href="./html/formulario-quejas.html">Ayuda</a></li>
           </ul>
           <ul class="footer__listItems">
             <li class="footer__listItem"><a href="">Acuerdos corporativos</a></li>
@@ -568,6 +492,7 @@
         </div>
       </footer>
     </div>
+    <!-- <div class="coverScreen"></div> -->
   </body>
 </html>
 <script src="./js/infoRestaurant.js"></script>
@@ -585,6 +510,8 @@
 <!-- Swiper-js -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
 <!--Uncomment this line-->
-<script src="../js/slider.js" defer></script>
+<script src="./js/slider.js" defer></script>
 <script src="./js/LoginData.js"></script>
-<script src="../js/sliderComidas.js"></script>
+<script src="./js/sliderComidas.js"></script>
+<script src="../js/search-bar.js"></script>
+<script src="./js/numerito.js"></script>

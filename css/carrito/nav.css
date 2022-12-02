@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap'); 
+:root {
+  --header-height: 1rem;
+  --p-: 0.7em;
+  --first-color: #0071e3;
+  --title-color: #044186;
+  --text_color: #043f7b;
+  --text-color-light: #b3b3b3;
+  --body-color: #fbfefd;
+  --btn-rappi: rgb(41, 216, 132);
+  --btn-rappi-hover: rgb(53, 199, 128);
+  --lines-color: rgba(225, 225, 225, 0.5);
+  --font-family: 'Erica One', cursive;
+  --font-family2: 'Nunito Sans', sans-serif;
+  --text-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  margin-top: 0.3em;
+  background-color: var(--body-color);
+  z-index: 1;
+}
+body {
+  overflow-y: scroll;
+}
+
+#icon-list {
+  margin: 0;
+}
+.txt_font_menuDespleagable {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+#icon-list {
+  display: inline-block;
+  color: rgba(225, 225, 225, 0);
+}
+
+.logo-tittle {
+  font-family: 'Erica One', cursive;
+  color: var(--first-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 10px;
+}
+.container-location_lima {
+  color: var(--first-color);
+  font-family: var(--font-family2);
+
+}
+
+.logo-img {
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
+
+.container-location_lima {
+  font-family: var(--font-family);
+  font-size: var(--text-size);
+}
+
+.search-bar {
+  margin-right: 0;
+  padding: 0 0.3em;
+  background: #e1e1e1c8;
+  border-radius: 0.2em;
+  padding-right: 1em;
+  min-width: 13em;
+  gap: 0.3em;
+}
+.search {
+  font-size: 0.8rem;
+  border: 0;
+  width: 92%;
+  padding: 0.9em 0;
+  background: transparent;
+  outline: none;
+}
+::placeholder {
+  color: #000;
+}
+
+.style-container-location {
+  border-left: 0.1em solid #a6a6a6;
+  border-right: 0.1em solid #a6a6a6;
+  height: fit-content;
+  margin-right: 1em;
+}
+.container-user-carrito {
+  margin-right: 1em;
+  gap: 0.8em;
+}
+.container-user-carrito_txt_usuario {
+  text-decoration: none;
+  color: var(--first-color);
+  font-family: var(--font-family);
+  font-size: var(--text-size);
+}
+.disactive {
+  display: none !important;
+}
+.active {
+  display: block !important;
+}
+
+.bg-gray {
+  background: rgba(12, 12, 12, 0.85);
+}
+@media screen and (min-width: 1200px) {
+  .search-bar {
+    margin: 0 0.7em 0 2em;
+  }
+}
+#icon-list {
+  padding: 0.5em 0.6em;
+}
+/* Nav desplegable */
+.aparecer_nav-desplegable {
+  padding: 0 1em 0 0;
+  position: fixed;
+  top: -0.1px;
+  left: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+.nav-desplegable {
+  width: 0;
+  display: none;
+  padding: 0px;
+  position: absolute;
+  top: -0.1px;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+.container-secciones {
+  cursor: pointer;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 1em;
+  
+}
+li {
+  width: 100%;
+  padding-right: 2%;
+}
+li:hover {
+  background-color: var(--lines-color);
+}
+.desplegable__text {
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-desplegable__icons {
+  padding: var(--p-);
+  border-bottom: 1px solid var(--lines-color);
+}
+.img-user-item {
+  width: 10em;
+}
+.img-fire img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 2em;
+}
+#nav-desplegable__button-close {
+  margin-right: 2em;
+}
+
+.buttons-registrar {
+  padding: var(--p-);
+  border-bottom: 1px solid var(--lines-color);
+}
+.btn-ingreso,
+.btn-tarjeta {
+  background: var(--btn-rappi);
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.3em 0.7em;
+  border-radius: 0.2em;
+  line-height: 30px;
+  transition: all 1s;
+}
+.btn-ingreso,
+.btn-tarjeta:hover {
+  background: var(--btn-rappi-hover);
+}
+.container-secciones {
+  padding: var(--p-);
+  border-bottom: 1px solid var(--lines-color);
+}
+.list-text {
+  font-size: var(--text-size);
+  font-weight: 600;
+  color: #000;
+}
+.seccion-registro {
+  padding: var(--p-);
+  font-size: var(--text-size);
+  border-bottom: 1px solid var(--lines-color);
+}
+.nacionality {
+  padding: var(--p-);
+  font-weight: 600;
+  color: #000;
+  border-bottom: 1px solid var(--lines-color);
+}
+.nacionality__countries-icon .countries-icons {
+  margin-left: 1.7em;
+  width: 1em;
+}
+.txtContries {
+  margin: 0;
+}

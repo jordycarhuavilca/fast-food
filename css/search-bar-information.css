@@ -1,0 +1,81 @@
+.menuPrincipal {
+  /* position: relative; */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.menuPrincipal form {
+  position: relative;
+}
+.searchInformation {
+  width: 100%;
+  height: 11rem;
+  background-color: #fff;
+  /* background-color: aqçua; */
+  position: absolute;
+  top: 2.5rem;
+  overflow-y: scroll;
+  left: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.search__sugerencias {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgb(234, 234, 234);
+}
+.search__sugerencias {
+  cursor: pointer;
+}
+.search__sugerenciasTxt {
+  font-weight: 600;
+}
+.searchListInformation {
+  position: relative;
+  z-index: 99999999999999;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.searchItem {
+  padding: 0.8rem 1rem;
+}
+.desapareceSearchBarList {
+  transition: height 0.15s ease;
+  height: 0;
+}
+.desapareceSearchBarItems {
+  display: none;
+}
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.15s ease;
+}
+.notFound i {
+  font-size: 2em;
+}
+.notFound span {
+  font-size: 1em;
+}
+.desapareceNotFound {
+  opacity: 0;
+  z-index: -99999;
+}
+.coverScreen {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  background-color: rgba(138, 138, 138, 0.401);
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarpiShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../css/carrito/main.css">
+    <link rel="stylesheet" href="../../css/carrito/nav.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../css/estilos.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="position-sticky">
+        <nav class="nav-desplegable">
+          <div class="container-items d-flex flex-column">
+            <div class="nav-desplegable__icons d-flex justify-content-between px-2">
+              <a href="" class="img-fire"><img src="../../img/flame-110.png" alt="" /></a>
+              <a href="" id="nav-desplegable__button-close"
+                ><i class="bi bi-x-circle-fill text-black-50"></i
+              ></a>
+            </div>
+            <div class="buttons-registrar d-flex justify-content-around">
+              <a href="../Usuario.html">
+                <input type="button" value="ingreso" class="btn-ingreso" />
+              </a>
+              <a href=".../html/">
+                <input type="button" value="tarjeta" class="btn-tarjeta" />
+              </a>
+            </div>
+            <div class="container-secciones">
+              <h2 class="ps-5 h6 text-black-50 py-2">seccion</h2>
+              <ul class="d-flex flex-column gap-2">
+                <li>
+                  <a
+                    href="./comida__tailandesa.html"
+                    style="text-decoration: none"
+                    class="desplegable__text d-flex align-items-center"
+                    ><p class="list-text">Comida Tailandesa</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="./comida__china.html"
+                    class="desplegable__text d-flex justify-content-between"
+                    style="text-decoration: none"
+                    ><p class="list-text">Comida China</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="./hamburguesas.html"
+                    class="desplegable__text d-flex justify-content-between"
+                    style="text-decoration: none"
+                    ><p class="list-text">Hamburguesa</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="./comida__japonesa.html"
+                    class="desplegable__text d-flex justify-content-between"
+                    style="text-decoration: none"
+                    ><p class="list-text">Comida Japonesa</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="./comida__mexicana.html"
+                    class="desplegable__text d-flex justify-content-between"
+                    style="text-decoration: none"
+                    ><p class="list-text">Comida Mexicana</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="./comida__criolla.html"
+                    class="desplegable__text"
+                    style="text-decoration: none"
+                    ><p class="list-text">Platos Criollos</p>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="seccion-registro">
+              <h2 class="ps-5 h6 text-black-50 py-2">otros</h2>
+              <ul class="d-flex flex-column gap-4">
+                <a href=""><li>Registra tu restaurante</li></a>
+                <a href=""><li>Registra tu tienda</li></a>
+              </ul>
+            </div>
+            <div class="nacionality">
+              <a href="" class="d-flex justify-content-between align-items-center">
+                <div class="nacionality__countries-icon d-flex align-items-center gap-1">
+                  <img class="countries-icons" src="../../img/peru.png" alt="" />
+                  <p id="id-country" class="text-black txtContries">Peru</p>
+                </div>
+                <i class="bi bi-chevron-right text-black-50"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+        <div class="row d-flex flex-nowrap align-items-center">
+          <!-- icon hamburger menu -->
+          <div id="icon-list" class="col-auto">
+            <a href="" id="hamburgerIcon">
+              <i class="bi bi-list" style="font-size: 1.5em"></i>
+            </a>
+          </div>
+          <div class="col-auto d-flex d-none d-md-block">
+            <a class="logo-tittle" href="../../index.html">FastFood</a>
+          </div>
+          <div class="style-container-location col-1 d-none d-lg-block">
+            <div>
+              <a
+                href="#"
+                class="d-flex flex-nowrap align-items-center"
+                style="text-decoration: none"
+              >
+                <i class="bi bi-geo-alt-fill text-black" style="font-size: 1.3em"></i>
+                <span class="container-location_lima">Lima</span>
+              </a>
+            </div>
+          </div>
+          <!-- Search-bar -->
+          <div class="col container-search-bar">
+            <form
+              action=""
+              method="dialog"
+              class="search-bar d-flex align-items-center align-self-center"
+            >
+              <img class="logo-img" src="../../img/flame-110.png" alt="" width="12em" height="12em" />
+              <input type="text" placeholder="Buscar en Fast Food" class="search" />
+              <a href="">
+                <i class="icon-search bi bi-search text-black-50"></i>
+              </a>
+            </form>
+          </div>
+
+          <!--User-->
+          <div class="container-user-carrito col-auto d-flex align-items-center">
+            <a href="../../html/Login-ux-design.html">
+              <i class="bi bi-person-circle text-black" style="font-size: 1.2rem"></i>
+            </a>
+            <a
+              class="container-user-carrito_txt_usuario d-none d-xl-block txt_font2_menuDespleagable"
+              href="../../html/Login-ux-design.html"
+              >Usuario</a
+            >
+            <a href="./carrito.html" style="text-decoration: none">
+              <i class="bi bi-cart-fill icono__carro"></i>
+              <span id="numerito" class="numerito">0</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <h2 class="titulo-principal" id="titulo-principal">Comida Criolla</h2>
+      <div id="contenedor-productos" class="contenedor-productos"></div>
+    </main>
+    <footer class="containerInfo">
+      <div class="footer__content">
+        <ul class="footer__listItems">
+          <li class="footer__listItem"><a href="">Quiénes somos</a></li>
+          <li class="footer__listItem"><a href="">Termino y Condiciones</a></li>
+          <li class="footer__listItem"><a href="">Privacidad</a></li>
+          <li class="footer__listItem"><a href="">Sé parte de FastFood</a></li>
+          <li class="footer__listItem"><a href="">Blog</a></li>
+        </ul>
+        <ul class="footer__listItems">
+          <li class="footer__listItem"><a href="">Top comidas</a></li>
+          <li class="footer__listItem"><a href="">Top Cadenas</a></li>
+          <li class="footer__listItem"><a href="">Top Ciudades</a></li>
+        </ul>
+        <ul class="footer__listItems">
+          <li class="footer__listItem"><a href="">Registrate</a></li>
+          <li class="footer__listItem"><a href="">Centro de Socios</a></li>
+          <li class="footer__listItem"><a href="./html/formulario-quejas.html">Ayuda</a></li>
+        </ul>
+        <ul class="footer__listItems">
+          <li class="footer__listItem"><a href="">Acuerdos corporativos</a></li>
+        </ul>
+      </div>
+      <div class="footer__redesSociales">
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="../../js/carrito/main.js"></script>
+    <script src="../../js/carrito/criolla.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

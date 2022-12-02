@@ -7,7 +7,6 @@ const btnCloseCardPropina = document.querySelector('#btnCloseCardPropina')
 const cantidadPropinaDivs = document.querySelectorAll('.cantidadPropina div')
 const requisitosCardInputs = document.querySelectorAll('.requisitosCard input')
 const btnSaveCard = document.querySelector('.btnSaveCard')
-console.log(btnclose)
 const appearAddCard = (e) => {
   e.preventDefault()
   console.log('1')
@@ -276,7 +275,7 @@ const validateAll = () => {
   if (trueFalse[0] && trueFalse[1] && trueFalse[2] && trueFalse[3] && trueFalse[4]) {
     alertSuccess.classList.remove('opacityAlert-success')
     alertSuccess.classList.add('disOpacityAlert-success')
-    alertSuccess.style.zIndex = '200'
+    alertSuccess.style.zIndex = '99999'
     for (let i = 0; i < requisitosCardInputs.length; i++) {
       requisitosCardInputs[i].value = ' '
     }
@@ -320,17 +319,14 @@ const validarInputElegirPropina = (e) => {
     e.target.value = valor + '.'
   }
   if (length === 0) {
-    console.log('poniendo')
     let valor = e.target.value
     e.target.value = 'S/' + valor
   }
   if (length === 4) {
-    console.log('poniendo')
     let valor = e.target.value
     e.target.value = valor + '.'
   }
   if (length === 5) {
-    console.log('poniendo')
     let valor = e.target.value
     e.target.value = valor + '.'
   }
@@ -338,7 +334,7 @@ const validarInputElegirPropina = (e) => {
     e.preventDefault()
   }
 }
-
+const total = document.querySelector('.total')
 buttons.forEach((button) => {
   button.addEventListener('click', (e) => {
     if (e.target.name === 'guardar') {
@@ -365,7 +361,7 @@ btnHacerPedido.addEventListener('click', () => {
       spinnerTxt.textContent = 'Se ha creado tu orden'
       spinners.style.display = 'none'
       spinnerCheck.classList.add('spinnerCheckIconStyle')
-      spinnerCheck.innerHTML = '<i class="bi bi-check-circle-fill"></i>'
+      spinnerCheck.innerHTML = '<i class="bi bi-check-circle-fill" style="color: rgb(41, 216, 132);"></i>'
     }, 4000)
     setTimeout(() => {
       contaiSpinners.classList.add('inactivo')
