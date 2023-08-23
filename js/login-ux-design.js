@@ -1,3 +1,6 @@
+import authApi from "../api/auth.api.js"
+console.log(authApi)
+
 const inputs = document.querySelectorAll('.login__inputs input')
 const spans = document.querySelectorAll('.login__inputs span')
 const btnRegistrarme = document.querySelector('.sign-up__btn-registrarme')
@@ -36,33 +39,8 @@ const appearRegistration = (e) => {
   containerLogin.classList.add('active')
   containerLogin.classList.remove('disactive')
 }
-const validarInputs = (e) => {
-  // e.preventDefault()
-  let index = -1
-  try {
-    for (let i = 0; i < SaverData.length(); i++) {
-      console.log('????????????' + SaverData.listUsers[0].email)
-      console.log(inputs[0].value + ' ' + SaverData.listUsers[i].email)
-      if (inputs[0].value === SaverData.listUsers[i].email) {
-        console.log('well')
-        index = i
-        break
-      }
-    }
-    if (SaverData.listUsers[index].password === inputs[1].value) {
-      console.log('todo correcto')
-      loginIn.style.display = 'block'
-      checkPerson.style.display = 'block'
-      e.preventDefault()
-    } else {
-      console.log('wrong email')
-      e.preventDefault()
-    }
-  } catch (error) {
-    console.log('#3')
-    alert('No existe la cuenta o los valores son equivocados')
-    e.preventDefault()
-  }
+const validarInputs = () => {  
+
 }
 const deleteLoginIn = (e) => {
   loginIn.style.display = 'none'
