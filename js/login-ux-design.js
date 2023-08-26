@@ -1,5 +1,4 @@
-import authApi from "../api/auth.api.js"
-console.log(authApi)
+import {loginPost} from "../api/auth.api.js"
 
 const inputs = document.querySelectorAll('.login__inputs input')
 const spans = document.querySelectorAll('.login__inputs span')
@@ -39,8 +38,13 @@ const appearRegistration = (e) => {
   containerLogin.classList.add('active')
   containerLogin.classList.remove('disactive')
 }
-const validarInputs = () => {  
 
+const validarInputs = (e) => { 
+  e.preventDefault()
+  const gmail  = document.getElementById('email')
+  const password = document.getElementById('password')
+  loginPost({gmail,password})
+  
 }
 const deleteLoginIn = (e) => {
   loginIn.style.display = 'none'

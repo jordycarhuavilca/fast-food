@@ -1,3 +1,4 @@
+import {authentificateToken} from '../../api/auth.api.js'
 let productosEnCarrito = localStorage.getItem('productos-en-carrito')
 productosEnCarrito = JSON.parse(productosEnCarrito)
 
@@ -95,13 +96,22 @@ function actualizarTotal() {
   total.innerText = `S/. ${totalCalculado}`
 }
 
-botonComprar.addEventListener('click', comprarCarrito)
-function comprarCarrito(e) {
-  productosEnCarrito.length = 0
-  localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito))
-  e.target.setAttribute('href','../../html/sistemaPagos.html')
-  contenedorCarritoVacio.classList.add('disabled')
-  contenedorCarritoProductos.classList.add('disabled')
-  contenedorCarritoAcciones.classList.add('disabled')
-  contenedorCarritoComprado.classList.remove('disabled')
+async function comprarCarrito() {
+  console.log(document.cookie)
+  const tokenVerify =await authentificateToken()
+  console.log(tokenVerify)
+  if(!tokenVerify)  return  window.location.href = '../../html/Login-ux-design.html'
+
+    productosEnCarrito.length = 0
+    localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito))
+    window.location.href = '../../html/sistemaPagos.html'
+    contenedorCarritoVacio.classList.add('disabled')
+    contenedorCarritoProductos.classList.add('disabled')
+    contenedorCarritoAcciones.classList.add('disabled')
+    contenedorCarritoComprado.classList.remove('disabled')
+ 
+
+  
+
 }
+botonComprar.addEventListener('click', comprarCarrito)
